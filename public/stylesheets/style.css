@@ -17,8 +17,9 @@ a, ul, li{
 }
 
 .header-titles{
-  padding: 10px 20px;
+  padding: 10px 5px;
   color: var(--white);
+  font-size: 28px;
 }
 
 :root {
@@ -32,9 +33,11 @@ a, ul, li{
 
 .header-container{
     background: linear-gradient(180deg, var(--electric-indigo) 0%, rgba(120, 5, 227, 0) 100%);
-    padding-top: 94px;
-    padding-bottom: 140px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+
 
 .nav-container{
   width: 90%;
@@ -66,6 +69,7 @@ a, ul, li{
     color: var(--black);
   }
   
+ 
   .searchButton {
     
     border: 3px solid var(--white);
@@ -120,14 +124,15 @@ padding: 16px 11px;
   .category{
     display: flex;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 4px 4px 4px 0;
+    padding: 10px 20px;
   }
 
   .category img{
     height: 40px;
   }
 
-  .category a{
+  .category a .category button{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -144,7 +149,7 @@ padding: 16px 11px;
   }
   
 
-  .menubtn {
+  .hamburger-menu button {
     border: none;
     background-color: transparent;
     font-family: 'Roboto';
@@ -152,6 +157,8 @@ padding: 16px 11px;
     font-weight: 500;
     font-size: 28px;
     line-height: 33px;
+    padding-bottom: 1px;
+    padding: 10px 5px;
   }
   
   .hamburger-container {
@@ -162,21 +169,38 @@ padding: 16px 11px;
   .hamburger-links {
     display: none;
     position: absolute;
-    background-color: red;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #8400ff8b;
     z-index: 1;
+    border-radius: 0 0 0 0;
+    width: 100%;
   }
 
   .hamburger-links a {
     color: black;
-    padding: 12px 16px;
+    padding: 13px 20px;
     text-decoration: none;
     display: block;
-  }
-  .hamburger-links a:hover {background-color: blue;}
+    text-align: center;
+    color: var(--white);
+    font-size: 20px;
 
-  .hamburger-container:hover .hamburger-links {display: block;}
+  }
+  .hamburger-links a:hover {
+    background-color: var(--electric-indigo);
+    transition: all 1s;
+  }
+
+  .hamburger-container:hover .hamburger-links {
+    display: block;
+    border-radius: 0 0 4px 4px;
+    transition: all 1s;
+}
+
   
   .hamburger-container:hover .hamburger-menu {
-    background-color: #8400FF;
+    background-color: #8400ff8b;
+  }
+
+  .header-options{
+    margin-top: 50px;
   }
