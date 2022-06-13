@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Up</title>
+    <link rel="stylesheet" href="public/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header class="header-container">
+
+        <nav class="nav-container">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Busque aqui o seu produto...">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+               </button>
+             </div>
+
+            <div class="nav-links">
+
+                <div class="user-nav">
+                    <a href="" class="nav-icon-links"><img src="public/images/icons/account.svg" alt=""></a>
+                    <a href="" class="nav-text-links">Minha Conta</a>
+                </div>
+
+                <div class="user-nav">
+                    <a href="" class="nav-icon-links"><img src="public/images/icons/support.svg" class="imagem" alt=""></a>
+                    <a href="" class="nav-text-links">Atendimento</a>
+                </div>
+
+                <div class="user-nav">
+                    <a href="/cart" class="nav-icon-links"><img src="public/images/icons/shopping-car.svg" alt=""></a>
+                    <a href="/cart" class="nav-text-links">Carrinho</a>
+            </div>
+
+            </div>
+        </nav>
+
+        <div class="header-options">
+
+            <div class="hamburger-container">
+
+                <div class="hamburger-menu category" class="menu-svg">
+                    <img src="public/images/icons/menu.svg" alt="">
+                    <button class="menubtn header-titles">Menu</button>
+                </div>
+                
+                <div class="hamburger-links">
+                    <a href="#">Smartphones</a>
+                    <a href="#">Periféricos</a>
+                    <a href="#">Áudio</a>
+                    <a href="#">Cadeiras</a>
+                    <a href="#">Hardware</a>
+                    <a href="#">Tablet</a>
+                    <a href="#">TV's</a>
+                 </div>
+
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="public/images/icons/trophy.svg" alt=""></a>
+                <a href="" class="header-titles">Mais Vendidos</a>
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="public/images/icons/desktop.svg" alt=""></a>
+                <a href="" class="header-titles">Computadores</a>
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="public/images/icons/laptop.svg" alt=""></a>
+                <a href="" class="header-titles">Notebooks</a>
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="public/images/icons/gamer.svg" alt=""></a>
+                <a href="" class="header-titles">Gamer</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="cart-info">
+
+        <div id="cart-title">
+            <img src="public/images/icons/shopping-car.svg" alt="">
+            <h2>Carrinho</h2>
+        </div>
+
+        <!--
+            Início da entrada do script
+        Para cada produto adicionado no carrinho, mostrar o código abaixo.
+        -->
+
+        <div class="remove-container">
+            <img id="product-photo">
+            
+            <div class="product-name">
+                <h2>Nome do produto</h2>
+
+                <!--Função remover do carrinho-->
+            
+                <div class="remove-flex">
+                    <img src="./public/images/icons/remove_shopping_cart_white_24dp 1.svg" alt="">
+                    <h2>Remover do carrinho</h2>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="buy-value">
+            <h2 id="value-title">Valor do produto: </h2>
+            <h2 id="value-number">R$2.700</h2>
+        </div>
+
+            <!-- Adicionar função para receber valores dos produtos adicionados no carrinho e somá-los mostrando o valor total da compra-->
+            <div id="final-buy-value">
+                <img src="./public/images/icons/shopping_bag_white_24dp 1.svg">
+                <div id="write-buy-value">
+                    <h1>Valor total da compra:</h1>
+                    <h2>R$5.600,00</h2>
+                </div>
+
+                <!-- Adicionar rota para finalização de compra-->
+                <div id="button-final">
+                    <button type="submit">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+        
+</body>
+</html>
