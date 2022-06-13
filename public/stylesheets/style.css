@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fff;
 }
 
 body{
@@ -19,6 +18,10 @@ a, ul, li{
 
 img{
   display: block;
+}
+
+h1, h2, h3, a, p{
+  color: #fff;
 }
 
 .header-titles{
