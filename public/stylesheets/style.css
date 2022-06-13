@@ -717,3 +717,115 @@ bottom: 10px;
 width: 25px;
 margin-left: 5px;
 }
+
+/* CSS página de carrinho (falta adicionar imagem do produto ao invés de fundo cinza) */
+
+#cart-info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+
+#cart-title{
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: flex;
+  align-items: baseline;
+
+}
+
+#cart-title img{
+  height: 60px;
+  width: 60px;
+}
+
+#cart-title h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: white;
+  align-self: center;
+}
+
+.remove-flex{
+  display: flex;
+}
+
+.remove-flex h2{
+  padding-top: 10px;
+}
+
+.remove-container{
+  display: flex;
+  gap: 30px;
+  max-width: 1280px;
+}
+
+.product-name{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#product-photo{
+  height: 200px;
+  width: 400px;
+  background-color: gray;
+}
+
+#buy-value{
+  margin-top: 50px;
+  display: flex;
+}
+
+#value-title{
+  padding-right: 10px;
+}
+
+#final-buy-value{
+  margin-top: 50px;
+  display: flex;
+}
+
+
+#final-buy-value img{
+  height: 90px;
+  width: 90px;
+  align-self: center;
+}
+
+#write-buy-value{
+  flex-direction: column;
+}
+
+#write-buy-value h1{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  padding-left: 5px;
+}
+
+#write-buy-value h2{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  padding: 10px;
+}
+
+#button-final{
+  margin-left: 150px;
+}
+
+#final-buy-value button{
+  background-color: #8400ff8b;
+  width: 280px;
+  height: 70px;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: white;
+}
+
