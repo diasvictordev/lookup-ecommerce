@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Look Up</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header class="header-container">
+
+        <nav class="nav-container">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Busque aqui o seu produto...">
+                <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+               </button>
+             </div>
+
+            <div class="nav-links">
+
+                <div class="user-nav">
+                    <a href="/login" class="nav-icon-links"><img src="/images/icons/account.svg" alt=""></a>
+                    <a href="/login" class="nav-text-links">Minha Conta</a>
+                </div>
+
+                <div class="user-nav">
+                    <a href="" class="nav-icon-links"><img src="/images/icons/support.svg" class="imagem" alt=""></a>
+                    <a href="" class="nav-text-links">Atendimento</a>
+                </div>
+
+                <div class="user-nav">
+                    <a href="" class="nav-icon-links"><img src="/images/icons/shopping-car.svg" alt=""></a>
+                    <a href="" class="nav-text-links">Carrinho</a>
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="header-options">
+
+            <div class="hamburger-container">
+
+                <div class="hamburger-menu category" class="menu-svg">
+                    <img src="/images/icons/menu.svg" alt="">
+                    <button class="menubtn header-titles">Menu</button>
+                </div>
+                
+                <div class="hamburger-links">
+                    <a href="#">Smartphones</a>
+                    <a href="#">Periféricos</a>
+                    <a href="#">Áudio</a>
+                    <a href="#">Cadeiras</a>
+                    <a href="#">Hardware</a>
+                    <a href="#">Tablet</a>
+                    <a href="#">TV's</a>
+                 </div>
+
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="/images/icons/trophy.svg" alt=""></a>
+                <a href="" class="header-titles">Mais Vendidos</a>
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="/images/icons/desktop.svg" alt=""></a>
+                <a href="" class="header-titles">Computadores</a>
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="/images/icons/laptop.svg" alt=""></a>
+                <a href="" class="header-titles">Notebooks</a>
+            </div>
+
+            <div class="category">
+                <a href="" class="category-link"><img src="/images/icons/gamer.svg" alt=""></a>
+                <a href="" class="header-titles">Gamer</a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+            <div class="slider">
+
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide first">
+                        <img src="/images/banner/1.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/images/banner/2.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/images/banner/3.jpg" alt="">
+                    </div>
+
+                    <div class="slide">
+                        <img src="/images/banner/4.jpg" alt="">
+                    </div>
+
+                    <div class="navigation-auto">
+
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+
+                    </div>
+                </div>
+
+                <div class="manual-navigation">
+                    
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+
+                </div>
+
+            </div>
+
+            <script type="text/javascript">
+
+                let count = 1;
+
+                setInterval(function(){
+                    document.getElementById("radio" + count).checked = true;
+                    count++
+                    if(count > 4){
+                        count = 1
+                    }
+                },5000)
+
+             </script>
+
+                <div class="highlights">
+
+                        <div class="highlights-card">
+                            <img src="/images/high/2.jpg" alt="">
+                        </div>
+
+                        <div class="highlights-card">
+                            <img src="/images/high/2.jpg" alt="">
+                        </div>
+
+                        <div class="highlights-card">
+                            <img src="/images/high/2.jpg" alt="">
+                        </div>
+
+                </div>
+
+
+                <div class="highlights-slider">
+
+                    <div class="highlights-slides">
+                        <input type="radio" name="highlights-btn" id="highlights1">
+                        <input type="radio" name="highlights-btn" id="highlights2">
+                        <input type="radio" name="highlights-btn" id="highlights3">
+            
+                        <div class="slides-h first">
+                            <img src="/images/banner/1.jpg" alt="">
+                        </div>
+            
+                        <div class="slides-h">
+                            <img src="/images/banner/2.jpg" alt="">
+                        </div>
+            
+                        <div class="slides-h">
+                            <img src="/images/banner/3.jpg" alt="">
+                        </div>
+            
+            
+                        <div class="highlights-auto">
+            
+                            <div class="highlights-btn1"></div>
+                            <div class="highlights-btn2"></div>
+                            <div class="highlights-btn3"></div>
+            
+                        </div>
+                    </div>
+            
+                    <div class="manual-highlights">
+                        
+                        <label for="highlights1" class="manual-btn"></label>
+                        <label for="highlights2" class="manual-btn"></label>
+                        <label for="highlights3" class="manual-btn"></label>
+            
+                    </div>
+            
+                </div>
+            
+                <script type="text/javascript">
+            
+                    let highlightsCount = 1;
+            
+                    setInterval(function(){
+                        document.getElementById("highlights" + highlightsCount).checked = true;
+                        highlightsCount++
+                        if(highlightsCount > 3){
+                            highlightsCount = 1
+                        }
+                    },5000)
+            
+                 </script>
+
+                 <div class="box-container">
+
+                 <div class="title-container">
+                     <img src="/images/icons/warning.svg" alt="">
+                     <span>Produtos em Oferta</span>
+                 </div>
+
+                 <div class="products-container">
+
+                    <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+
+                   <div class="add-product-container">
+                    <div class="products-card">
+                    <img src="/images/high/2.jpg" alt="">
+                    <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                    <span class="price-cash">A vista R$ 1.200,00</span>
+                    <span class="text1-card">ou</span>
+                    <span class="price-card">R$ 1.400,00</span>
+                    <span class="text2-card">em até</span>
+                    <span class="parcel-price">12x de R$ 142,00</span>
+                    </div>
+                    <button class="add-product">Adicionar ao Carrinho</button>
+               </div>
+
+                      <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+
+                      <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+
+                 </div>
+
+                 </div>
+
+                 <div class="brands">
+
+                    <div class="brand-card">
+                        <img src="/images//banner/intel.jpeg" alt="">
+                    </div>
+
+                    <div class="brand-card">
+                        <img src="/images/banner/ryzen.jpg" alt="">
+                    </div>
+
+                 </div>
+
+                 <div class="box-container">
+
+                    <div class="title-container">
+                        <img src="/images/icons/upgrade.svg" alt="">
+                        <span>Upgrade</span>
+                    </div>
+   
+                    <div class="products-container">
+   
+                       <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+   
+                       <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+   
+                       <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+   
+                       <div class="add-product-container">
+                        <div class="products-card">
+                        <img src="/images/high/2.jpg" alt="">
+                        <h2 class="description-card">Nome do produto - mini descrição...</h2>
+                        <span class="price-cash">A vista R$ 1.200,00</span>
+                        <span class="text1-card">ou</span>
+                        <span class="price-card">R$ 1.400,00</span>
+                        <span class="text2-card">em até</span>
+                        <span class="parcel-price">12x de R$ 142,00</span>
+                        </div>
+                        <button class="add-product">Adicionar ao Carrinho</button>
+                   </div>
+   
+                    </div>
+
+                 </div>
+
+                <div class="ipu-container">
+
+                    <div class="ipu-card">
+                        <h2>Iniciante</h2>
+                        <img src="/images/high/2.jpg" alt="">
+                    </div>
+
+                    <div class="ipu-card">
+                        <h2>Ultra</h2>
+                        <img src="/images/high/2.jpg" alt="">
+                    </div>
+
+                    <div class="ipu-card">
+                        <h2>Ultimate</h2>
+                        <img src="/images/high/2.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="support-container">
+
+                    <h2>Atendimento</h2>
+
+                        <div class="support-flex">
+
+                            <div class="support-hours">
+                                <p>Segunda á Sextas das 8:00 ás 19:00</p>
+                                <p>Sábado das 8:00 ás 13:00</p>
+                            </div>
+
+                            <div class="support-card">
+                                <p>WhatsApp</p>
+
+                                <div class="support-icon">
+                                    <img src="/images/icons/whatsapp.svg" alt="">
+                                    <a href="tel:123-456-7890">123-456-7890</a>
+                                </div>
+                            </div>
+
+                            <div class="support-card">
+                                <p>Email</p>
+
+                                <div class="support-icon">
+                                    <img src="/images/icons/mail.svg" alt="">
+                                    <a href = "mailto: contado@lookUp@email.com">contado@lookUp@email.com</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                </div>
+                
+    </main>
+
+    <footer>
+
+        <div class="footer-container">
+
+        <div class="f-card">
+            <h2>Look Up</h2>
+            <a href="">Sobre</a>
+            <a href="">Trabalhe Conosco</a>
+            <a href="">Políticas de Privacidade</a>
+        </div>
+            
+        <div class="f-card">
+            <h2>Ajuda</h2>
+            <a href="">Entrega</a>
+            <a href="">Rastrear Pedido</a>
+            <a href="">Trocas e Devoluções</a>
+            <a href="">Controle de Qualidades</a>
+        </div>
+
+            <div class="f-card">
+                <h2>Suporte</h2>
+                <a href="">Fale Conosco</a>
+                <a href="">Problema Técnico</a>
+            </div>
+
+            <div class="payments-container">
+                <h2>Formas de Pagamentos</h2>
+                <div  class="payments-methods">
+                <div>
+                <img src="/images/icons/visa.svg" alt="">
+                <img src="/images/icons/mastercard.svg" alt="">
+                </div>
+
+                <div>
+                <img src="/images/icons/american.svg" alt="">
+                <img src="/images/icons/paypal.svg" alt="">
+                <img src="/images/icons/boleto.svg" alt="">
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="social-medias">
+            <a href="https://www.instagram.com/" target="_blank"><img src="/images/icons/instagram.svg" alt=""></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="/images/icons/facebook.svg" alt=""></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="/images/icons/youtube.svg" alt=""></a>
+            <a href="https://www.tiktok.com/en/" target="_blank"><img src="/images/icons/tiktok.svg" alt=""></a>
+            <a href="https://twitter.com/?lang=en" target="_blank"><img src="/images/icons/twitter.svg" alt=""></a>
+            <a href="https://github.com/diasvictordev/lookup-ecommerce" target="_blank"><img src="/images/icons/github.svg" alt=""></a>
+        </div>
+
+        <p>&copy; 2022 Look Up!</p>
+
+    </footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<div class="remover-container">
+
+<img src="" alt="">
+
+<div>
+    <h2></h2>
+
+    <div class="remover-flex">
+        <img src="" alt="">
+        <h2></h2>
+    </div>
+</div>
+
+</div>
