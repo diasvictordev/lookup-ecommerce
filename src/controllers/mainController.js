@@ -11,6 +11,10 @@ const mainController = {
         res.render('login');
     },
 
+    carrinho: (req,res) => {
+        res.render('cart');
+    },
+
 }
 
 

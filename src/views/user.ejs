@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Look Up</title>
-    <link rel="stylesheet" href="/stylesheets/login.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -85,107 +85,71 @@
 
     </header>
 
-    <main>
-        <div class="user-signin">
+    <div id="user">
 
-            <div class="user-signin-titleContainer">
-                <h1 class="user-signin-title">Já sou cadastrado</h1>
+        <div class="container-left">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img>
+                    <h2>Nome de usuario</h2>
+                </div>
+        
+                <div class="credit">
+                    <div id="credit-black">
+                        <h2>créditos:R$ ??</h2>
+                    </div>  
+                    <p>Comprar creditos</p>
+                </div>
+        
+                <div class="edit-profile">
+                    <p>Editar perfil</p>
+                </div>
             </div>
+        
 
-            <form class="signin-form">
-
-                <div class="MuiFormControll-root">
-                    <input type="email" class="signinEmail" placeholder="E-mail" autocomplete="off">
-                </div>
-                
-                <div class="MuiFormControll-root">
-                    <input type="password" class="signinPassword" placeholder="Senha" autocomplete="off">
-                </div>
-
-                <div class="MuiGrid-item">
-                    <a href="" class="MuiTypography-body MuiTypography-colorPrimary">Esqueci meu login ?</a>
-                </div>
-                
-                <button type="submit" class="signin-btn">Acessar</button>
-
-            </form>
-            
+            <div id="contact-sac">
+                <h4>Atendimento ao cliente</h4>
+                <h5>Central SAC: (13) 98806-6744</h5>
+                <h5>henriqueaffonsorios@gmail.com</h5>
+                <button id="suport-button">Atendimento via chat</button>
+            </div>
         </div>
 
-        <div class="user-signup">
-            <h1 class="user-signup-title">Não sou cadastrado</h1>
+        <div id="info-stories">
+            <h1 id="buy-title-story">Histórico De Compras</h1>
+            <h5 id="buy-subtitle-story">Aqui você encontra todas as informações do seu pedido</h5>
 
-            <div class="order-signup-list">
-
-                <ul class="list-inline">
-                    <li>100% seguro</li>
-                    <li>100% confiável</li>
+            <div id="buy-table-story">
+            <div class="table-head">Todos os pedidos</div>
+            <div class="table-head-2">
+                <ul>
+                    <li>Número do pedido</li>
+                    <li>Data</li>
+                    <li>Pagamento</li>
+                    <li>Posição</li>
                 </ul>
-
+            </div>
+            <div class="table-row">
+                <ul>
+                    <li>4312378074</li>
+                    <li>30/03/2022</li>
+                    <li>Cartão de Crédito</li>
+                    <li>Enviado</li>
+                </ul>
+            </div>
+            <div class="table-row">
+                <ul>
+                    <li>8496727200</li>
+                    <li>14/03/2022</li>
+                    <li>Boleto Bancário</li>
+                    <li>Enviado</li>
+                </ul>
             </div>
 
-            <a href="/cadastro" class="btnSignup-btn"><button type="submit" class="signup-btn">Cadastre-se</button></a>
-
-        </div>
-
-    </main>
-
-    <footer>
-
-        <div class="footer-container">
-
-        <div class="f-card">
-            <h2>Look Up</h2>
-            <a href="">Sobre</a>
-            <a href="">Trabalhe Conosco</a>
-            <a href="">Políticas de Privacidade</a>
-        </div>
-            
-        <div class="f-card">
-            <h2>Ajuda</h2>
-            <a href="">Entrega</a>
-            <a href="">Rastrear Pedido</a>
-            <a href="">Trocas e Devoluções</a>
-            <a href="">Controle de Qualidades</a>
-        </div>
-
-            <div class="f-card">
-                <h2>Suporte</h2>
-                <a href="">Fale Conosco</a>
-                <a href="">Problema Técnico</a>
             </div>
-
-            <div class="payments-container">
-                <h2>Formas de Pagamentos</h2>
-                <div  class="payments-methods">
-                <div>
-                <img src="/images/icons/visa.svg" alt="">
-                <img src="/images/icons/mastercard.svg" alt="">
-                </div>
-
-                <div>
-                <img src="/images/icons/american.svg" alt="">
-                <img src="/images/icons/paypal.svg" alt="">
-                <img src="/images/icons/boleto.svg" alt="">
-                </div>
-                </div>
-
-            </div>
-
         </div>
-
-        <div class="social-medias">
-            <a href="https://www.instagram.com/" target="_blank"><img src="/images/icons/instagram.svg" alt=""></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="/images/icons/facebook.svg" alt=""></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="/images/icons/youtube.svg" alt=""></a>
-            <a href="https://www.tiktok.com/en/" target="_blank"><img src="/images/icons/tiktok.svg" alt=""></a>
-            <a href="https://twitter.com/?lang=en" target="_blank"><img src="/images/icons/twitter.svg" alt=""></a>
-            <a href="https://github.com/diasvictordev/lookup-ecommerce" target="_blank"><img src="/images/icons/github.svg" alt=""></a>
-        </div>
-
-        <p>&copy; 2022 Look Up!</p>
-
-    </footer>
+    </div>
 
 </body>
+
 </html>
