@@ -1,4 +1,4 @@
-const getInfoDatabase = require('../utils/getInfoDatabase')
+// const getInfoDatabase = require('../utils/getInfoDatabase')
 const bcrypt = require('bcrypt')
 const { v4 } = require('uuid')
 const path = require('path')
