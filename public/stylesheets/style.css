@@ -40,20 +40,20 @@ button {
     --black: #000;
     --silver-sand: #c4c4c4;
     --max-width-pattern: 1280px;
+    --width: 100%;
     --centralize-container: 0 auto;
   }
 
 
 .header-container{
     background: linear-gradient(180deg, var(--electric-indigo) 0%, rgba(120, 5, 227, 0) 100%);
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 3%;
 }
 
 
 
 .nav-container{
-  width: 90%;
+  width: 100%;
     max-width: var(--max-width-pattern);
     margin: var(--centralize-container);
     display: flex;
@@ -159,7 +159,7 @@ padding: 16px 11px;
   .header-options{
     max-width: var(--max-width-pattern);
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -224,7 +224,8 @@ padding: 16px 11px;
 
   .slider{
     margin: var(--centralize-container);
-    width: var(--max-width-pattern);
+    max-width: var(--max-width-pattern);
+    width: var(--width);
     height: 450px;
     overflow: hidden;
   }
@@ -661,6 +662,7 @@ footer{
   background: linear-gradient(180deg, #000000 0%, #8400FF 100%);
   padding-top: 40px;
   padding-bottom: 40px;
+  margin-top: 20px;
   position: relative;}
 
   footer p{

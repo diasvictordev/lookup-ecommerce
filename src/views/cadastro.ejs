@@ -23,18 +23,18 @@
 
             <div class="MuiSignup-container">
 
-                <form class="MuiSignup-form">
+                <form class="MuiSignup-form" action="/usuario/cadastro" method="POST">
 
                     <div class="MuiSignup-nameInput">
 
-                        <input type="text" class="MuiSignup-name" placeholder="Nome" autocomplete="off">
-                        <input type="text" class="MuiSignup-lastName" placeholder="Sobrenome" autocomplete="off">
+                        <input type="text" class="MuiSignup-name" name="name" placeholder="Nome" autocomplete="off">
+                        <input type="text" class="MuiSignup-lastName" name="lastName" placeholder="Sobrenome" autocomplete="off">
 
                     </div>
 
                     <div class="MuiSignup-selectInput">
 
-                        <select class="MuiSignup-select">
+                        <select class="MuiSignup-select" name="select">
                             <option value="fisicPerson" autocomplete="on">Pessoa física</option>
                             <option value="juridicPerson">Pessoa jurídica</option>
                         </select>
@@ -44,23 +44,35 @@
     
                     <div class="MuiSignup-textForm">
                             
-                        <input type="text" class="MuiSignup-CPF" placeholder="CPF*" autocomplete="off">
-                        <input type="text" class="MuiSignup-RG" placeholder="RG*" autocomplete="off">
+                        <input type="text" class="MuiSignup-CPF" name="cpf" placeholder="CPF*" autocomplete="off">
+                        <input type="text" class="MuiSignup-RG" name="rg" placeholder="RG*" autocomplete="off">
 
                     </div>
 
                     <div class="MuiSignup-emailInput">
 
-                        <input type="text" class="MuiSignup-email" placeholder="E-mail" autocomplete="off">
+                        <input type="text" class="MuiSignup-email" name="email" placeholder="E-mail" autocomplete="off">
 
                     </div>
                     
                     <div class="MuiSignup-passwordInput">
 
-                        <input type="password" class="MuiSignup-password" placeholder="Senha" autocomplete="off">
+                        <input type="password" class="MuiSignup-password" name="password" placeholder="Senha" autocomplete="off">
 
                     </div>
                     
+                    <div class="MuiSignup-errorsList">
+                        <% if(typeof errors !== 'undefined'){ %>
+                        
+                            <ul class="MuiSignup-errors">
+                                <% for(let error in errors){ %>
+                                    <li><%= errors[error].msg %></li>
+                                    <% } %>
+                            </ul>
+
+                            <% } %>
+                        
+                    </div>
     
                     <div class="MuiSignup-checkContainer">
 
@@ -74,7 +86,7 @@
 
                     <div class="MuiSignup-checkContainer-2">
 
-                        <input type="checkbox" id="MuiSignup-checkBox-2">
+                        <input type="checkbox" name='checkbox' id="MuiSignup-checkBox-2">
                         <div class="MuiSignup-checkLabel-2">
                             <label for="MuiSignup-checkBox-2">Estou ciente e CONCORDO com os termos de aceite e políticas de privacidade da LookUp.</label>
                         </div>

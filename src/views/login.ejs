@@ -21,18 +21,28 @@
                 <h1 class="user-signin-title">Já sou cadastrado</h1>
             </div>
 
-            <form class="signin-form">
+            <form class="signin-form" action="/usuario/login" method="POST">
 
                 <div class="MuiFormControll-root">
-                    <input type="email" class="signinEmail" placeholder="E-mail" autocomplete="off">
+                    <input type="email" class="signinEmail" name="email" placeholder="E-mail" autocomplete="off">
                 </div>
                 
                 <div class="MuiFormControll-root">
-                    <input type="password" class="signinPassword" placeholder="Senha" autocomplete="off">
+                    <input type="password" class="signinPassword" name="password" placeholder="Senha" autocomplete="off">
                 </div>
 
                 <div class="MuiGrid-item">
                     <a href="" class="MuiTypography-body MuiTypography-colorPrimary">Esqueci meu login ?</a>
+                </div>
+
+                <div class="loginErrors-container">
+                    <% if(typeof errors !== 'undefined') { %>
+                        <ul>
+                            <% for(let error in errors) { %>
+                                <li><%= errors[error].msg %></li>
+                          <% } %>
+                        </ul>
+                   <% } %>
                 </div>
                 
                 <button type="submit" class="signin-btn">Acessar</button>
@@ -53,7 +63,7 @@
 
             </div>
 
-            <a href="/cadastro" class="btnSignup-btn"><button type="submit" class="signup-btn">Cadastre-se</button></a>
+            <a href="/usuario/cadastro" class="btnSignup-btn"><button type="submit" class="signup-btn">Cadastre-se</button></a>
 
         </div>
 

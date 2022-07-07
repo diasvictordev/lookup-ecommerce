@@ -2,7 +2,8 @@ const express = require('express');
 const app = express();
 const methodOverride = require('method-override');
 
-const router = require('./src/routes/mainRouter');
+const mainRouter = require('./src/routes/mainRouter');
+const userRouter = require('./src/routes/userRouter');
 
 const path = require('path');
 
@@ -14,7 +15,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', router);
+app.use('/', mainRouter);
+app.use('/usuario', userRouter);
 
 
 app.set('view engine', 'ejs');
