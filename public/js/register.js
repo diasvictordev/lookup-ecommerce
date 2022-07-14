@@ -77,3 +77,4 @@ function setSucessFor(input){
 
     formControl.className = 'MuiSignup-input success';
 }
+
