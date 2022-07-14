@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Look Up</title>
     <link rel="stylesheet" href="/stylesheets/cadastro.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <body>
     
@@ -18,60 +18,75 @@
 
         <div class="signupContainer">
 
+            <div class="headerForm">
+
                 <img class="MuiSignup-img" src="/images/icons/person-plus-fill.svg">
                 <h1 class="MuiSignup-title">Criar minha conta</h1>
 
+            </div>
+
             <div class="MuiSignup-container">
 
-                <form class="MuiSignup-form" action="/usuario/cadastro" method="POST">
+                <form id='form' class="MuiSignup-form" action="/usuario/cadastro" method="POST">
 
-                    <div class="MuiSignup-nameInput">
+                    <div class="MuiSignup-input">
 
-                        <input type="text" class="MuiSignup-name" name="name" placeholder="Nome" autocomplete="off">
-                        <input type="text" class="MuiSignup-lastName" name="lastName" placeholder="Sobrenome" autocomplete="off">
-
-                    </div>
-
-                    <div class="MuiSignup-selectInput">
-
-                        <select class="MuiSignup-select" name="select">
-                            <option value="fisicPerson" autocomplete="on">Pessoa física</option>
-                            <option value="juridicPerson">Pessoa jurídica</option>
-                        </select>
-
-                    </div>
-
-    
-                    <div class="MuiSignup-textForm">
-                            
-                        <input type="text" class="MuiSignup-CPF" name="cpf" placeholder="CPF*" autocomplete="off">
-                        <input type="text" class="MuiSignup-RG" name="rg" placeholder="RG*" autocomplete="off">
-
-                    </div>
-
-                    <div class="MuiSignup-emailInput">
-
-                        <input type="text" class="MuiSignup-email" name="email" placeholder="E-mail" autocomplete="off">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" placeholder="Digite seu nome" autocomplete="off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de Erro</small>
 
                     </div>
                     
-                    <div class="MuiSignup-passwordInput">
+                    <div class="MuiSignup-input">
 
-                        <input type="password" class="MuiSignup-password" name="password" placeholder="Senha" autocomplete="off">
+                        <label for="surName">Sobrenome</label>
+                        <input type="text" id="surName" name="surName" placeholder="Digite seu sobrenome" autocomplete="off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de Erro</small>
+
+                    </div>
+                       
+                    <div class="MuiSignup-input">
+                         
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" autocomplete="off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de Erro</small>
+
+                    </div>
+
+                    <div class="MuiSignup-input">
+
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Digite seu email" autocomplete="off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de Erro</small>
 
                     </div>
                     
-                    <div class="MuiSignup-errorsList">
-                        <% if(typeof errors !== 'undefined'){ %>
-                        
-                            <ul class="MuiSignup-errors">
-                                <% for(let error in errors){ %>
-                                    <li><%= errors[error].msg %></li>
-                                    <% } %>
-                            </ul>
+                    <div class="MuiSignup-input">
 
-                            <% } %>
-                        
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" name="password" placeholder="Crie uma senha" autocomplete="off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de Erro</small>
+
+                    </div>
+
+                    <div class="MuiSignup-input">
+
+                        <label for="passwordConfirme">Confirmação de Senha</label>
+                        <input type="password" id="passwordConfirme" name="passwordConfirme" placeholder="Confirme sua senha" autocomplete="off">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de Erro</small>
+
                     </div>
     
                     <div class="MuiSignup-checkContainer">
@@ -84,11 +99,11 @@
                            
                     </div>
 
-                    <div class="MuiSignup-checkContainer-2">
+                    <div class="MuiSignup-checkContainer">
 
-                        <input type="checkbox" name='checkbox' id="MuiSignup-checkBox-2">
-                        <div class="MuiSignup-checkLabel-2">
-                            <label for="MuiSignup-checkBox-2">Estou ciente e CONCORDO com os termos de aceite e políticas de privacidade da LookUp.</label>
+                        <input type="checkbox" name='checkbox' id="MuiSignup-checkBox">
+                        <div class="MuiSignup-checkLabel">
+                            <label for="MuiSignup-checkBox">Estou ciente e CONCORDO com os termos de aceite e políticas de privacidade da LookUp.</label>
                         </div>
                         
 
@@ -112,6 +127,9 @@
         <%- include('./partials/footer'); %>
     </footer>
 
+    <script src="https://kit.fontawesome.com/60206f6f34.js" crossorigin="anonymous"></script>
+
+    <script src='/js/register.js'></script>
 
 </body>
 </html>

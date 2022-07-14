@@ -17,7 +17,7 @@ router.get('/cadastro', userController.cadastro);
 
 // Processo de Registro 
 
-router.post('/cadastro',registerValidator, userController.processoCadastro);
+router.post('/cadastro', userController.processoCadastro);
 
 // Formulario de Login 
 
